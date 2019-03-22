@@ -3,9 +3,9 @@ node_js:
   - 10
 # before_install:
 #   - npm install
-# before_script:
-#   - "export DISPLAY=:99.0"
-#   - "sh -e /etc/init.d/xvfb start"
+before_script:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
 # script: karma start karma.conf.js --single-run
 
 # 第一次将配好的测试项目上传到GitHub，然后想通过Travis CI进行集成测试，但是Travis并没有对项目进行构建，排查原因如下：
